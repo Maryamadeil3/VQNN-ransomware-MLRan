@@ -1,0 +1,29 @@
+{
+ "qfi": {
+  "api_calls": 0.4610390042799626,
+  "registry_keys": 0.1671294206866642,
+  "dropped_files": 0.2694736796464284,
+  "system_events": 0.10235789538694484
+ },
+ "rf_rank": {
+  "api_calls": 4.4,
+  "registry_keys": 5.0,
+  "file_ops": 7.0,
+  "directory_ops": 8.0,
+  "dropped_files": 2.3,
+  "sandbox_signatures": 5.6,
+  "system_events": 1.0,
+  "strings": 2.7
+ },
+ "entropy": {
+  "q0|q1q2q3_trained": 0.7827508516547587,
+  "q0|q1q2q3_init": 0.9046092556669733,
+  "q0|q1q2q3_rans": 0.8251244348457227,
+  "q0|q1q2q3_ben": 0.7441161140394679,
+  "q0q1|q2q3_trained": 1.3526371186607302,
+  "q0q1|q2q3_init": 1.4269883930021308,
+  "q0q1|q2q3_rans": 1.4029352379949276,
+  "q0q1|q2q3_ben": 1.3067770686795508,
+  "encoded": 1.6017132519074581e-15
+ }
+}

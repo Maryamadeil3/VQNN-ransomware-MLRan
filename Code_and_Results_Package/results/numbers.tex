@@ -1,0 +1,156 @@
+\newcommand{\NTotal}{4876}
+\newcommand{\NRans}{2326}
+\newcommand{\NBen}{2550}
+\newcommand{\NFam}{64}
+\newcommand{\NPool}{3901}
+\newcommand{\NTrain}{3120}
+\newcommand{\NVal}{781}
+\newcommand{\NTest}{975}
+\newcommand{\NTestRans}{465}
+\newcommand{\NTestBen}{510}
+\newcommand{\TestYears}{2021--2024}
+\newcommand{\PoolYears}{2006--2023}
+\newcommand{\NSeeds}{10}
+\newcommand{\MaxIter}{400}
+\newcommand{\VQNNParams}{16}
+\newcommand{\VQNNTime}{0.3}
+\newcommand{\NCircEvals}{1{,}248{,}000}
+\newcommand{\MicrosecPerCirc}{0.24}
+\newcommand{\FullCostHours}{0.03}
+\newcommand{\BestClassical}{RF}
+\newcommand{\SharedWrong}{40.0}
+\newcommand{\VQNNRightShared}{3.6}
+\newcommand{\AgreeLR}{91.6}
+\newcommand{\SoftwareVersions}{Python 3.13.18, NumPy 2.5.3, SciPy 1.18.1, scikit-learn 1.9.1, XGBoost 3.4.1, Qiskit 2.6.2; CPU: Intel(R) Xeon(R) Processor @ 2.10GHz (2 cores)}
+\newcommand{\VQNNAcc}{0.843 $\pm$ 0.024}
+\newcommand{\VQNNMCC}{0.693 $\pm$ 0.050}
+\newcommand{\VQNNAUC}{0.893 $\pm$ 0.022}
+\newcommand{\VQNNF}{0.843 $\pm$ 0.031}
+\newcommand{\VQNNRec}{0.887 $\pm$ 0.066}
+\newcommand{\VQNNFPR}{0.197 $\pm$ 0.025}
+\newcommand{\VQNNRecOne}{0.268 $\pm$ 0.126}
+\newcommand{\VQNNRecFive}{0.411 $\pm$ 0.110}
+\newcommand{\OneFeatAcc}{0.827 $\pm$ 0.011}
+\newcommand{\OneFeatMCC}{0.655 $\pm$ 0.022}
+\newcommand{\OneFeatAUC}{0.897 $\pm$ 0.000}
+\newcommand{\OneFeatF}{0.820 $\pm$ 0.017}
+\newcommand{\OneFeatRec}{0.829 $\pm$ 0.043}
+\newcommand{\OneFeatFPR}{0.175 $\pm$ 0.019}
+\newcommand{\OneFeatRecOne}{0.000 $\pm$ 0.000}
+\newcommand{\OneFeatRecFive}{0.000 $\pm$ 0.000}
+\newcommand{\LRAcc}{0.890 $\pm$ 0.003}
+\newcommand{\LRMCC}{0.794 $\pm$ 0.003}
+\newcommand{\LRAUC}{0.935 $\pm$ 0.000}
+\newcommand{\LRF}{0.895 $\pm$ 0.002}
+\newcommand{\LRRec}{0.979 $\pm$ 0.013}
+\newcommand{\LRFPR}{0.192 $\pm$ 0.018}
+\newcommand{\LRRecOne}{0.286 $\pm$ 0.044}
+\newcommand{\LRRecFive}{0.500 $\pm$ 0.008}
+\newcommand{\MlpSAcc}{0.888 $\pm$ 0.013}
+\newcommand{\MlpSMCC}{0.786 $\pm$ 0.031}
+\newcommand{\MlpSAUC}{0.934 $\pm$ 0.005}
+\newcommand{\MlpSF}{0.890 $\pm$ 0.017}
+\newcommand{\MlpSRec}{0.954 $\pm$ 0.051}
+\newcommand{\MlpSFPR}{0.172 $\pm$ 0.029}
+\newcommand{\MlpSRecOne}{0.337 $\pm$ 0.050}
+\newcommand{\MlpSRecFive}{0.494 $\pm$ 0.026}
+\newcommand{\MlpLAcc}{0.885 $\pm$ 0.018}
+\newcommand{\MlpLMCC}{0.774 $\pm$ 0.032}
+\newcommand{\MlpLAUC}{0.947 $\pm$ 0.003}
+\newcommand{\MlpLF}{0.875 $\pm$ 0.028}
+\newcommand{\MlpLRec}{0.857 $\pm$ 0.079}
+\newcommand{\MlpLFPR}{0.089 $\pm$ 0.039}
+\newcommand{\MlpLRecOne}{0.409 $\pm$ 0.157}
+\newcommand{\MlpLRecFive}{0.763 $\pm$ 0.020}
+\newcommand{\RFAcc}{0.906 $\pm$ 0.019}
+\newcommand{\RFMCC}{0.817 $\pm$ 0.036}
+\newcommand{\RFAUC}{0.967 $\pm$ 0.002}
+\newcommand{\RFF}{0.902 $\pm$ 0.025}
+\newcommand{\RFRec}{0.915 $\pm$ 0.076}
+\newcommand{\RFFPR}{0.103 $\pm$ 0.041}
+\newcommand{\RFRecOne}{0.617 $\pm$ 0.130}
+\newcommand{\RFRecFive}{0.814 $\pm$ 0.022}
+\newcommand{\XGBAcc}{0.892 $\pm$ 0.016}
+\newcommand{\XGBMCC}{0.788 $\pm$ 0.030}
+\newcommand{\XGBAUC}{0.953 $\pm$ 0.002}
+\newcommand{\XGBF}{0.885 $\pm$ 0.025}
+\newcommand{\XGBRec}{0.883 $\pm$ 0.073}
+\newcommand{\XGBFPR}{0.099 $\pm$ 0.037}
+\newcommand{\XGBRecOne}{0.441 $\pm$ 0.201}
+\newcommand{\XGBRecFive}{0.786 $\pm$ 0.004}
+\newcommand{\SVMAcc}{0.875 $\pm$ 0.024}
+\newcommand{\SVMMCC}{0.755 $\pm$ 0.049}
+\newcommand{\SVMAUC}{0.931 $\pm$ 0.004}
+\newcommand{\SVMF}{0.871 $\pm$ 0.031}
+\newcommand{\SVMRec}{0.893 $\pm$ 0.077}
+\newcommand{\SVMFPR}{0.141 $\pm$ 0.036}
+\newcommand{\SVMRecOne}{0.299 $\pm$ 0.103}
+\newcommand{\SVMRecFive}{0.520 $\pm$ 0.099}
+\newcommand{\VQNNEightAcc}{0.749 $\pm$ 0.064}
+\newcommand{\VQNNEightMCC}{0.521 $\pm$ 0.120}
+\newcommand{\VQNNEightAUC}{0.809 $\pm$ 0.053}
+\newcommand{\VQNNEightF}{0.708 $\pm$ 0.110}
+\newcommand{\VQNNEightRec}{0.684 $\pm$ 0.208}
+\newcommand{\VQNNEightFPR}{0.193 $\pm$ 0.147}
+\newcommand{\VQNNEightRecOne}{0.261 $\pm$ 0.055}
+\newcommand{\VQNNEightRecFive}{0.423 $\pm$ 0.126}
+\newcommand{\LREightAcc}{0.875 $\pm$ 0.011}
+\newcommand{\LREightMCC}{0.754 $\pm$ 0.019}
+\newcommand{\LREightAUC}{0.957 $\pm$ 0.001}
+\newcommand{\LREightF}{0.861 $\pm$ 0.015}
+\newcommand{\LREightRec}{0.816 $\pm$ 0.038}
+\newcommand{\LREightFPR}{0.070 $\pm$ 0.015}
+\newcommand{\LREightRecOne}{0.458 $\pm$ 0.091}
+\newcommand{\LREightRecFive}{0.744 $\pm$ 0.029}
+\newcommand{\MlpLEightAcc}{0.939 $\pm$ 0.005}
+\newcommand{\MlpLEightMCC}{0.878 $\pm$ 0.009}
+\newcommand{\MlpLEightAUC}{0.977 $\pm$ 0.003}
+\newcommand{\MlpLEightF}{0.936 $\pm$ 0.005}
+\newcommand{\MlpLEightRec}{0.936 $\pm$ 0.015}
+\newcommand{\MlpLEightFPR}{0.059 $\pm$ 0.012}
+\newcommand{\MlpLEightRecOne}{0.748 $\pm$ 0.095}
+\newcommand{\MlpLEightRecFive}{0.945 $\pm$ 0.012}
+\newcommand{\RFEightAcc}{0.943 $\pm$ 0.007}
+\newcommand{\RFEightMCC}{0.886 $\pm$ 0.015}
+\newcommand{\RFEightAUC}{0.984 $\pm$ 0.001}
+\newcommand{\RFEightF}{0.940 $\pm$ 0.008}
+\newcommand{\RFEightRec}{0.937 $\pm$ 0.020}
+\newcommand{\RFEightFPR}{0.051 $\pm$ 0.018}
+\newcommand{\RFEightRecOne}{0.793 $\pm$ 0.174}
+\newcommand{\RFEightRecFive}{0.963 $\pm$ 0.014}
+\newcommand{\XGBEightAcc}{0.947 $\pm$ 0.005}
+\newcommand{\XGBEightMCC}{0.893 $\pm$ 0.010}
+\newcommand{\XGBEightAUC}{0.984 $\pm$ 0.001}
+\newcommand{\XGBEightF}{0.944 $\pm$ 0.006}
+\newcommand{\XGBEightRec}{0.935 $\pm$ 0.014}
+\newcommand{\XGBEightFPR}{0.043 $\pm$ 0.007}
+\newcommand{\XGBEightRecOne}{0.770 $\pm$ 0.111}
+\newcommand{\XGBEightRecFive}{0.956 $\pm$ 0.013}
+\newcommand{\LRFullAcc}{0.976 $\pm$ 0.006}
+\newcommand{\LRFullMCC}{0.952 $\pm$ 0.012}
+\newcommand{\LRFullAUC}{0.997 $\pm$ 0.000}
+\newcommand{\LRFullF}{0.975 $\pm$ 0.006}
+\newcommand{\LRFullRec}{0.983 $\pm$ 0.013}
+\newcommand{\LRFullFPR}{0.030 $\pm$ 0.013}
+\newcommand{\LRFullRecOne}{0.987 $\pm$ 0.005}
+\newcommand{\LRFullRecFive}{0.994 $\pm$ 0.002}
+\newcommand{\RFFullAcc}{0.959 $\pm$ 0.008}
+\newcommand{\RFFullMCC}{0.919 $\pm$ 0.015}
+\newcommand{\RFFullAUC}{0.994 $\pm$ 0.001}
+\newcommand{\RFFullF}{0.957 $\pm$ 0.009}
+\newcommand{\RFFullRec}{0.960 $\pm$ 0.033}
+\newcommand{\RFFullFPR}{0.043 $\pm$ 0.018}
+\newcommand{\RFFullRecOne}{0.945 $\pm$ 0.033}
+\newcommand{\RFFullRecFive}{0.992 $\pm$ 0.016}
+\newcommand{\XGBFullAcc}{0.966 $\pm$ 0.007}
+\newcommand{\XGBFullMCC}{0.933 $\pm$ 0.014}
+\newcommand{\XGBFullAUC}{0.995 $\pm$ 0.001}
+\newcommand{\XGBFullF}{0.965 $\pm$ 0.008}
+\newcommand{\XGBFullRec}{0.975 $\pm$ 0.020}
+\newcommand{\XGBFullFPR}{0.041 $\pm$ 0.008}
+\newcommand{\XGBFullRecOne}{0.962 $\pm$ 0.022}
+\newcommand{\XGBFullRecFive}{0.996 $\pm$ 0.003}
+\newcommand{\EntOneTrained}{0.78}
+\newcommand{\EntOneInit}{0.90}
+\newcommand{\EntTwoTrained}{1.35}
+\newcommand{\EntTwoInit}{1.43}
